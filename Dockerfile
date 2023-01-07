@@ -1,4 +1,4 @@
-FROM django:3.1
+FROM python:3.6.15-slim
 
 # Set the working directory to /app
 WORKDIR /app
