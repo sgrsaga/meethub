@@ -7,7 +7,7 @@ WORKDIR /app
 COPY . /app
 
 # Install any needed packages specified in requirements.txt
-RUN pip install -r requirements.txt
+#RUN pip install -r requirements.txt
 
 # Make port 8000 available for the app
 EXPOSE 8000
