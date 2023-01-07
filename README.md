@@ -1,37 +1,32 @@
-# MeetHub
+# My django project
+[![Python Version](https://img.shields.io/badge/python-3.6-brightgreen.svg)](https://python.org)
+[![PyPI - Django Version](https://img.shields.io/pypi/djversions/djangorestframework.svg)](https://djangoproject.com)
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/b0d1d86ada1848968faf19b9904f1382)](https://app.codacy.com/app/iyanuashiri/meethub?utm_source=github.com&utm_medium=referral&utm_content=iyanuashiri/meethub&utm_campaign=badger)
+Web application built by django framework.[Visit my website](https://cotp.pythonanywhere.com/)
 
-MeetHub is an open source event management system built with Python and Django web framework.
+##
+There some techniques have been used in my project
+  * The Model layer
+  * The View layer
+  * The template layer
+  * Forms
+  * The Admin
+  * Session
+  * Authentication
+	
+## Running project
+Install require packages
 
-## Features
-* Notifications system
-* Commenting
-* Events creation and monitoring
-* ...
- 
-## TODO
-- [ ] Add tests
-- [ ] Add REST api
-- [ ] Add threaded comments
-- [ ] Add Location based explore page
-- [ ] And some other basic stuffs
+	pip install -r requirements.txt
 
-## Installation
+Clone project to your computer
 
+	git clone https://github.com/t7hm1/My-django-project.git
 
+Migrate project
 
+	python3 manage.py migrate
+		
+Run your server on your localhost
 
-![explore page](https://res.cloudinary.com/iyanuashiri/image/upload/v1526323111/Screenshot-2018-5-14_Find_Your_Events_6.png)
-
-
-![create event](https://res.cloudinary.com/iyanuashiri/image/upload/v1526323111/Screenshot-2018-5-14_Find_Your_Events_5.png)
-
-
-![notifications](https://res.cloudinary.com/iyanuashiri/image/upload/v1526323232/Screenshot-2018-5-14_Find_Your_Events_1.png)
-
-
-![profile](https://res.cloudinary.com/iyanuashiri/image/upload/v1526323111/Screenshot-2018-5-14_Find_Your_Events_7.png)
-
-
-![login](https://res.cloudinary.com/iyanuashiri/image/upload/v1526323111/Screenshot-2018-5-14_MeetHub.png)
+	python3 manage.py runserver
