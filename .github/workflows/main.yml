@@ -13,7 +13,7 @@ jobs:
       # Build the Docker image
       - name: Build image
         run: |
-          docker build -t my-django-app:latest .
+          docker build -t sgrsaga/django_sample:latest .
 
       # Log in to the Docker registry
       - name: Log in to Docker registry
@@ -23,4 +23,4 @@ jobs:
       # Push the image to the Docker registry
       - name: Push image
         run: |
-          docker push my-django-app:latest
+          docker push sgrsaga/django_sample:latest
