@@ -1,4 +1,0 @@
-django
-Pillow
-feedparser
-xlsxwriter
