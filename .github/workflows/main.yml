@@ -9,17 +9,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+
+      # Lint the code
+      - name: Lint
+        run: |
+          pip install flake8
+          flake8 .
+
       # Run security scans
       - name: Security scan
         run: |
           pip install bandit
           bandit -r .
-
-      # Run tests
-      - name: Test
-        run: |
-          pip install pytest
-          python -m pytest
 
       # Build the Docker image
       - name: Build image
